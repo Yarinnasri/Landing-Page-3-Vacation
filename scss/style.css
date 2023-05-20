@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-image: url(../images/vacation-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+body .container {
+  background-color: rgba(238, 238, 238, 0.8296078431);
+  position: relative;
+  top: 100px;
+  width: 390px;
+  margin-right: 15%;
+  padding: 48px 32px 80px 32px;
+}
+body .container h1 {
+  color: #071192;
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+body .container p {
+  color: #2c2c2c;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 16px 0 32px;
+  max-width: 300px;
+}
+body .container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: unset;
+  align-items: unset;
+  gap: 20px;
+}
+body .container form label,
+body .container form input {
+  display: block;
+  width: 100%;
+}
+body .container form label {
+  color: #2c2c2c;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+body .container form input {
+  border-style: hidden;
+  border-bottom: 3.5px solid #071192;
+  padding: 4px;
+  height: 35px;
+  color: #2c2c2c;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+body .container form button {
+  max-width: 120px;
+  height: 35px;
+  background-color: #071192;
+  border: none;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+body .container form button:hover {
+  cursor: pointer;
+}
+body .container form button:active {
+  background-color: #040953;
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 560px) {
+  body .container {
+    margin: auto;
+    width: 79%;
+    padding: 32px 16px 64px 16px;
+  }
+  body .container h1 {
+    color: #071192;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  body .container p {
+    text-align: center;
+    margin: 16px auto 32px;
+  }
+  body .container form button {
+    max-width: unset;
+  }
+}
+@media screen and (max-height: 620px) {
+  body .container {
+    top: 25px;
+    padding: 20px 16px 40px 16px;
+  }
+}/*# sourceMappingURL=style.css.map */
